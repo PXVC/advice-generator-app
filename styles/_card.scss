@@ -1,51 +1,56 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 90%;
-  height: 308px;
-  border-radius: 1rem;
-  padding: 4rem 0 0 0;
-  background-color: $grayish-blue;
-  
-  h3 {
-    color: $neon-green;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 600;
-    word-spacing: 0.3rem;
-    letter-spacing: 0.34rem;
-  }
+	position: relative;
+	border-radius: 1rem;
+	padding: 4rem 0 6rem;
+	background-color: $grayish-blue;
 
-  h1 {
-    color: $light-cyan;
-    margin: 2.7rem 0 2.1rem;
-    line-height: 3.2rem;
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    word-spacing: -0.3rem;
-    max-width: 305px;
-  }
+	h3 {
+		color: $neon-green;
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		font-weight: 600;
+		word-spacing: 0.3rem;
+		letter-spacing: 0.34rem;
+	}
 
-  .divider {
-    &--desktop {
-      display: none;
-    }
-  }
+	h1 {
+		color: $light-cyan;
+		margin-top: 2.7rem;
+		line-height: 3.2rem;
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: 0.2rem;
+		text-align: center;
+		word-spacing: -0.3rem;
+		max-width: 305px;
+	}
 
-  .dice {
-    position: absolute;
-    top: 60.3%;
-    background-color: $neon-green;
-    padding: 1.8rem;
-    border-radius: 50%;
-    transition: filter 0.3s ease;
+	.divider {
+		&--mobile {
+      margin-top: 2.4rem;
+		}
 
-    &:hover {
-      cursor: pointer;
-      filter: drop-shadow(0 0 1.7rem $neon-green);
-    }
-  }
+		&--desktop {
+			display: none;
+		}
+	}
+
+	.dice {
+		position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+		background-color: $neon-green;
+		padding: 1.8rem;
+		border-radius: 50%;
+		transition: filter 0.3s ease;
+
+		&:hover {
+			cursor: pointer;
+			filter: drop-shadow(0 0 1.7rem $neon-green);
+		}
+	}
 }
