@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 10rem;
+	align-items: center;
+	min-height: 100vh;
+	font-family: Manrope, sans-serif;
+	background-color: $dark-grayish-blue;
+}

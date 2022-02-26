@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-family: Manrope, sans-serif;
+  background-color: #202632;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 308px;
+  border-radius: 1rem;
+  padding: 4rem 0 0 0;
+  background-color: #313a49;
+}
+
+.card h3 {
+  color: #52ffa8;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 600;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.34rem;
+}
+
+.card h1 {
+  color: #cee3e9;
+  margin: 2.7rem 0 2.1rem;
+  line-height: 3.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  word-spacing: -0.3rem;
+  max-width: 305px;
+}
+
+.card .divider--desktop {
+  display: none;
+}
+
+.card .dice {
+  position: absolute;
+  top: 60.3%;
+  background-color: #52ffa8;
+  padding: 1.8rem;
+  border-radius: 50%;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.card .dice:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 1.7rem #52ffa8);
+          filter: drop-shadow(0 0 1.7rem #52ffa8);
+}
+/*# sourceMappingURL=style.css.map */
