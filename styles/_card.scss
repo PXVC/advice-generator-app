@@ -31,7 +31,7 @@
 
 	.divider {
 		&--mobile {
-      margin-top: 2.4rem;
+			margin-top: 2.4rem;
 		}
 
 		&--desktop {
@@ -48,9 +48,25 @@
 		border-radius: 50%;
 		transition: filter 0.3s ease;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			cursor: pointer;
 			filter: drop-shadow(0 0 1.7rem $neon-green);
+		}
+	}
+}
+
+.attribution {
+	color: $light-cyan;
+
+	a {
+		color: $neon-green;
+		text-decoration: none;
+		transition: filter 0.3s ease;
+
+		&:hover,
+		&:focus {
+			filter: drop-shadow(0 0 0.6rem $neon-green);
 		}
 	}
 }

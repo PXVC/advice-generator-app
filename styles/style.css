@@ -90,9 +90,47 @@ body {
   transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
-.card .dice:hover {
+.card .dice:hover, .card .dice:focus {
   cursor: pointer;
   -webkit-filter: drop-shadow(0 0 1.7rem #52ffa8);
           filter: drop-shadow(0 0 1.7rem #52ffa8);
+}
+
+.attribution {
+  color: #cee3e9;
+}
+
+.attribution a {
+  color: #52ffa8;
+  text-decoration: none;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.attribution a:hover, .attribution a:focus {
+  -webkit-filter: drop-shadow(0 0 0.6rem #52ffa8);
+          filter: drop-shadow(0 0 0.6rem #52ffa8);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 37%;
+    padding: 5.1rem 0 7rem;
+  }
+  .card h1 {
+    max-width: 405px;
+    font-size: 2.4rem;
+    line-height: 3.7rem;
+    margin-top: 2.8rem;
+  }
+  .divider--mobile {
+    display: none;
+  }
+  .divider--desktop {
+    display: block !important;
+    margin-top: 3.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

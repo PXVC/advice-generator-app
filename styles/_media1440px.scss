@@ -1,0 +1,24 @@
+@media screen and (min-width: 1440px) {
+	.card {
+		width: 37%;
+		padding: 5.1rem 0 7rem;
+
+		h1 {
+			max-width: 405px;
+			font-size: 2.4rem;
+			line-height: 3.7rem;
+			margin-top: 2.8rem;
+		}
+	}
+
+	.divider {
+		&--mobile {
+			display: none;
+		}
+
+		&--desktop {
+			display: block !important;
+			margin-top: 3.3rem;
+		}
+	}
+}
